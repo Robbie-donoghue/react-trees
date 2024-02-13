@@ -1,5 +1,6 @@
 import Button from "./components/Button";
 import Counter from "./components/Counter";
+import Monkey from "./components/Monke";
 import TreeCard from "./components/TreeCard";
 
 export default function App() {
@@ -14,6 +15,8 @@ export default function App() {
         />
         <Button />
         <Counter />
+        <h3> monkey hiding </h3>
+        <Monkey></Monkey>
         <TreeCard
           treeName="Cherry Blossom"
           location="Global"
