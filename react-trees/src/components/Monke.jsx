@@ -1,6 +1,6 @@
 import { useState } from "react";
 
-export default function Monke() {
+export default function Monkey() {
   const [visible, setVisible] = useState(false);
 
   //false
