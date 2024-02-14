@@ -2,6 +2,7 @@ import Button from "./components/Button";
 import Counter from "./components/Counter";
 import Monkey from "./components/Monke";
 import TreeCard from "./components/TreeCard";
+import { treeList } from "./components/treeList";
 
 export default function App() {
   return (
@@ -24,6 +25,14 @@ export default function App() {
         />
         <Button />
         <Counter />
+        {treeList.map((tree) => (
+          <TreeCard
+            key={tree.id}
+            treeName={tree.name}
+            location={tree.location}
+            imgLink={tree.img}
+          />
+        ))}
       </div>
     </div>
   );
